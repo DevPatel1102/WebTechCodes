@@ -3,17 +3,20 @@
     padding: 0;
 }
     
-header nav #header_div #nav_bar ul li{
+#header_div #nav_bar ul li{
     display: inline;
     list-style: none;
 }
-header nav #header_div #nav_bar ul li a{
+#header_div #nav_bar ul li a{
     text-decoration: none;
     color: white;
     padding: 0 15px;
     font-family: Helvetica;
 }
 #header_div{
+    position: sticky;
+    top:0;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     padding: 20px;
