@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth ;
 }
-    
+section{
+    scroll-margin-top: 18vh;
+}
 #header_div #nav_bar ul li{
     display: inline;
     list-style: none;
@@ -24,6 +27,14 @@
     height: 10vh;
     background-color: #A51C30;
 }
+#footer_div{
+    padding: 20px;
+    align-items: center;
+    background-color: #A51C30;
+    color: white;
+    text-align: center;
+}
+
 #pdeu_logo{
     height: 100px;
 }
@@ -31,12 +42,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 150px 0px 150px;    
+    padding: 0px 150px;    
 }
 #about{
     font-family:Helvetica;
     font-size: 30px;
     width: 45%;
+    text-align: justify;
 }
 #about_img{
     height: 300px;
@@ -49,6 +61,7 @@
 p{
     font-size: 15px;
     margin-top: 20px;
+    font-family: Helvetica;
 }
 .title{
     font-family:Helvetica;
@@ -140,4 +153,25 @@ p{
     text-decoration: none;
     font-size: 24px;
     font-family: Helvetica;
+}
+.contactUsBox{
+    margin: 0 150px;
+    width: fit-content;
+}
+.contactUsBox input, .contactUsBox textarea{
+    margin-top: 5px;
+    width: 300px;
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.contactUsBox button{
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #03a8abd6;
+    color: white;
 }
