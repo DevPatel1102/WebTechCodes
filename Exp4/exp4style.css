@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 240px;
+    gap: 80px;
+    font-size: 45px;
+}
+.first{
+    width: 50%;
+}
+.first p{
+    padding: 20px 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.second{
+    position: relative;
+    width: 40%;
+    background-image: linear-gradient(90deg,rgb(45, 36, 61), rgb(84, 61, 103));
+    font-size: 45px;
+    text-align: center;
+    padding: 45px 25px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.time{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 14px;
+}
+.second img{
+    position: absolute;
+    bottom:35%;
+    left:43%;
+    width: 70px;
+    height: 70px;
+}
+.btn{
+    width:fit-content;
+    background-color: rgb(221, 66, 66);
+    border: none;
+    border-radius: 5px;
+}
+.btn-div{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 5px;
+    color: white;
+}
+.btn-div p{
+    font-size: 16px;
+}
+.btn-div img{
+    width: 20px;
+    height: 20px;
+}
+.tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 240px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: rgb(222, 222, 222);
+}
+.tab button{
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.videos-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 50px 240px 0px 240px;
+    gap: 30px;
+}
+.videos{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    gap: 30px;
+}
+.video-thumbnail{
+    display: flex;
+    position: relative;
+    width: 20vw;
+    height: 100px;
+    background-image: linear-gradient(90deg,rgb(45, 36, 61), rgb(84, 61, 103));
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 40px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.content{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:5px;
+}
+.content p1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.content p2{
+    font-size: 14px;
+}
+.content p3{
+    font-size: 16px;
+}
+.video-attributes{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+#like{
+    width: 15px;
+    height: 15px;
+}
+#comment{
+    width: 20px;
+    height: 20px;
+}
