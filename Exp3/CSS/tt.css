@@ -1,19 +1,47 @@
-.op{
-    background-color: antiquewhite;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
-.lb{
-    background-color:rgb(255, 255, 153);
-    color: brown;
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
 }
-.cdcell{
-    background-color: rgb(255, 168, 137);
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
 }
-.Industry{
-    background-color: rgb(169, 248, 255);
+
+.op {
+    background-color: #fff3e0; 
 }
-.machine-deep{
-    background-color:rgb(199, 255, 122);
+
+.lb {
+    background-color: #fff9c4;
+    color: #8b0000;
 }
-.communication{
-    background-color:rgb(170, 144, 222);
+
+.cdcell {
+    background-color: #ffccbc;
 }
+
+.Industry {
+    background-color: #b2ebf2;
+}
+
+.machine-deep {
+    background-color: #dcedc8;
+}
+
+.communication {
+    background-color: #d1c4e9;
+}   
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+
