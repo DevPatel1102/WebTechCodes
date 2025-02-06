@@ -110,6 +110,13 @@
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.7);
 }
+.video-thumbnail img{
+    position: absolute;
+    bottom:30%;
+    left:38%;
+    width: 70px;
+    height: 70px;
+}
 .content{
     width: 80vw;
     display: flex;
