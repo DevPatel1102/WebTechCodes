@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     display: flex;
     justify-content: center;
@@ -5,35 +9,102 @@ body{
 }
 form{
     border-radius: 8px;
-    background-color: rgb(239, 239, 239);
-    margin: 10px 100px;
+    background-color: rgb(247, 247, 247);
+    margin: 20px 100px;
     padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
-
 .input_field{
     display: flex;
     flex-direction: column;
-    margin: 25px 10px 0px 10px;
+    margin: 20px 10px 0px 10px;
     gap: 5px;
 }
 .input_field Label{
+    margin-top: 10px;
     font-size: 18px;
     text-align: left;
     color: rgb(31, 31, 31);
     font-family: Arial, sans-serif;
 }
 .input_field input{
+    padding: 8px 8px;
     width: 700px;
     border: 1px solid grey;
     border-radius: 5px;
     height: 25px;
+    font-size: 16px;
 }
 .input_field select{
-    width: 705px;
+    width: 100%;
     border: 1px solid grey;
     border-radius: 5px;
     height: 35px;
     padding: 8px;
     font-size: 16px;
 }
+#info p{
+    margin: 50px 0px 0px 0px;
+}
+.radio{
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 130px;
+}
+.radio p input{
+    width: fit-content;
+}
+.radio p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    gap:5px
+}
+.checkbox{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    gap: 10px;
+}
+.checkbox input{
+    width: fit-content;
+}
+.checkbox p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    gap:5px
+}
+.input_field textarea{
+    width: 700px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-family: Helvetica;
+}
+.form-btn{
+    margin: 20px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    width: 50%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color:rgb(255, 228, 217);
+    font-size: 16px;
+}
+
