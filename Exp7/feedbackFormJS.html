@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <form id="feedbackForm">
+    <center>
+      <h1>Feedback Form</h1>
+    </center>
+    <div class="input_field">
+      <label>Name</label>
+      <input type="text" id="nameInput">
+    </div>
+    <div class="input_field">
+      <label>Email</label>
+      <input type="email" id="emailInput">
+    </div>
+    <div class="input_field">
+      <label>Rating</label>
+      <div class="star_box">
+        <span onclick="star_rating(1)" class="star">★</span>
+        <span onclick="star_rating(2)" class="star">★</span>
+        <span onclick="star_rating(3)" class="star">★</span>
+        <span onclick="star_rating(4)" class="star">★</span>
+        <span onclick="star_rating(5)" class="star">★</span>
+      </div>
+    </div>
+    <div class="input_field">
+      <div class="upload_file">
+        <label>Upload Image</label>
+        <input type="file" id="imageInput" accept="image/*">
+      </div>
+    </div>
+    <div class="input_field">
+      <label>Review</label>
+      <textarea id="reviewInput"></textarea>
+    </div>
+    <div class="form-btn">
+      <button type="button" class="btn" onclick="previewFeedback()">Preview Feedback</button>
+      <button type="submit" class="btn" style="background-color: transparent;">Submit</button>
+    </div>
+  </form>
+
+  <div id="previewSection">
+    <h2>Feedback Preview</h2>
+    <p><strong>Name:</strong> <span id="previewName"></span></p>
+    <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+    <p><strong>Rating:</strong> <span id="previewRating"></span></p>
+    <p><strong>Review:</strong> <span id="previewReview"></span></p>
+    <div id="previewImageContainer">
+      <p><strong>Uploaded Image:</strong></p>
+      <img id="previewImage" src="" alt="Uploaded Image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
