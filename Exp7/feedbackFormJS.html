@@ -15,10 +15,27 @@
     <div class="input_field">
       <label>Name</label>
       <input type="text" id="nameInput">
+      <span class="error" id="nameError"></span>
     </div>
     <div class="input_field">
       <label>Email</label>
       <input type="email" id="emailInput">
+      <span class="error" id="emailError"></span>
+    </div>
+    <div class="input_field">
+      <label>Phone Number</label>
+      <input type="text" id="phoneInput">
+      <span class="error" id="phoneError"></span>
+    </div>
+    <div class="input_field">
+      <label>Location</label>
+      <input type="text" id="locationInput">
+      <span class="error" id="locationError"></span>
+    </div>
+    <div class="input_field">
+      <label>Date of Experience</label>
+      <input type="date" id="dateInput">
+      <span class="error" id="dateError"></span>
     </div>
     <div class="input_field">
       <label>Rating</label>
@@ -29,6 +46,7 @@
         <span onclick="star_rating(4)" class="star">★</span>
         <span onclick="star_rating(5)" class="star">★</span>
       </div>
+      <span class="error" id="ratingError"></span>
     </div>
     <div class="input_field">
       <div class="upload_file">
@@ -39,6 +57,7 @@
     <div class="input_field">
       <label>Review</label>
       <textarea id="reviewInput"></textarea>
+      <span class="error" id="reviewError"></span>
     </div>
     <div class="form-btn">
       <button type="button" class="btn" onclick="previewFeedback()">Preview Feedback</button>
@@ -50,6 +69,9 @@
     <h2>Feedback Preview</h2>
     <p><strong>Name:</strong> <span id="previewName"></span></p>
     <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+    <p><strong>Phone:</strong> <span id="previewPhone"></span></p>
+    <p><strong>Location:</strong> <span id="previewLocation"></span></p>
+    <p><strong>Date of Experience:</strong> <span id="previewDate"></span></p>
     <p><strong>Rating:</strong> <span id="previewRating"></span></p>
     <p><strong>Review:</strong> <span id="previewReview"></span></p>
     <div id="previewImageContainer">
